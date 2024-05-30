@@ -1,0 +1,18 @@
+#FILTER IS A TYPE OF INBUILT FUNCTION WHICH IS VERY USEFUL IT ACTS LIKE VLOOKUP WHICH DOES WORK AS 
+#IT USES TWO AGRUMENTS ONE IS A FUNCTION AND ANOTHER IS A LIST OR ANY COLLECTION OF DATA USED
+# ACCORDING TO THE FUNCTION OR THE FUNCTIONAL WORK IS DONE UPON THE LIST
+#--------------------->>SYNTAX: 
+#------------------------>> FILTER(FUNCTIONS,ITERABLE)
+
+def add(a):
+    return a%2==0
+nums=[1,2,3,4,5,6,7,8,9,10]
+answer=list(filter(add,nums))
+print(answer)
+#------------------------------THROUGH USING LAMBDA FUNCTION:-
+ans= set(filter(lambda a:a%2!=0,nums))
+print(ans)
+#------------------------------WE CAN ALSO USE RANGE IN THE PSSING AGRUMENTS
+#BUT WE MUST PROVIDE THE TYPE OF FORMAT WE NEED THE RESULT TO BE (WHEATHER IN SETS,TOUPLES,LISTS) AT THE STARTING 
+op = tuple(filter(lambda a:a%5==0,range(50)))
+print(op)
