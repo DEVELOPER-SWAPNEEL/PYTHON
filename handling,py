@@ -1,0 +1,3 @@
+file = open('random.txt','r')
+read= file.read()
+print(read)
