@@ -15,7 +15,7 @@ def solve():
             if B[i] < A[i]:
                 possible = False
                 break
-        if not possible:
+        if not  possible:
             print(f"Case #{case}: -1")
             continue
 
